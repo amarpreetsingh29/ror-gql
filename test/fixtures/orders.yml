@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  status: MyString
+  integer,: MyString
+  customer_id: MyString
+  integer: MyString
+
+two:
+  status: MyString
+  integer,: MyString
+  customer_id: MyString
+  integer: MyString

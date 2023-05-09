@@ -19,5 +19,11 @@ module Types
     def books
       ::Book.all
     end
+
+    field :customer, [CustomerType], null: true,
+    description: "List of customers"
+    def customer
+      ::Customer.all
+    end
   end
 end

@@ -5,7 +5,7 @@ module Types
     field :orders, [OrderType], null: false
 
     def orders
-      object.orders
+      object.orders.includes(:books)
     end
   end
 end

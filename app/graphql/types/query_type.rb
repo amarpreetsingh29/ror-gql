@@ -20,10 +20,20 @@ module Types
       ::Book.all
     end
 
-    field :customer, [CustomerType], null: true,
-    description: "List of customers"
-    def customer
+    field(:customers, [CustomerType], null: true, method: :customers) do
+        description "List of customers"
+    end
+    def customers
+      byebug
       ::Customer.all
+    end
+
+    field(:book, BookType, null: true) do
+      argument :id, ID, default_value: 1
+    end
+
+    def book(id:)
+      Book.find(id)
     end
   end
 end

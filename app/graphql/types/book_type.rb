@@ -2,10 +2,10 @@ module Types
   class BookType < BaseObject
     field :id, ID, null: false
     field :name, String, null: false
-    field :author, [AuthorType], null: false
+    field :authors, [AuthorType], null: false
 
-    def author
-      object.author
+    def authors
+      object.authors
     end
   end
 end

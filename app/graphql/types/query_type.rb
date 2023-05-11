@@ -24,7 +24,6 @@ module Types
         description "List of customers"
     end
     def customers
-      byebug
       ::Customer.all
     end
 

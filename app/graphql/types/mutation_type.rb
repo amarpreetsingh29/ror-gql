@@ -6,5 +6,13 @@ module Types
     def test_field
       "Hello World"
     end
+
+    field :create_book, BookType, null: false do
+      argument :name, String, required: true
+    end
+
+    def create_book(name:)
+      Book.create!(name: name)
+    end
   end
 end

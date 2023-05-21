@@ -3,7 +3,8 @@ class ArticlesController < ApplicationController
       @articles = Article.all
    end
 
-   def show(id)
-      @article = Article.find(params[:id])
+   def show
+      id = params[:id]
+      @article = Article.where(id: params[:id]).first
    end
 end

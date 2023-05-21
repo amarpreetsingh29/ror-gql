@@ -20,7 +20,7 @@ module Types
       ::Book.all
     end
 
-    field(:customers, [CustomerType], null: true, method: :customers) do
+    field(:customers, CustomerType.connection_type, null: false, method: :customers) do
         description "List of customers"
     end
     def customers

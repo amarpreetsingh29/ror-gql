@@ -2,12 +2,8 @@
 
 one:
   status: MyString
-  integer,: MyString
   customer_id: MyString
-  integer: MyString
 
 two:
   status: MyString
-  integer,: MyString
   customer_id: MyString
-  integer: MyString

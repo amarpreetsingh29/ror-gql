@@ -1,5 +1,5 @@
 module Services
-  class Create
+  class CreateOrder
     class << self
       def perform(book_id:, customer_id:)
         order = nil

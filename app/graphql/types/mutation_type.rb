@@ -21,7 +21,7 @@ module Types
     end
 
     def create_order(book_id:, customer_id:)
-      Services::Create.perform(
+      Services::CreateOrder.perform(
         book_id: book_id,
         customer_id: customer_id
       )
